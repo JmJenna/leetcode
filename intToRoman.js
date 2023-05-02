@@ -1,4 +1,5 @@
 var intToRoman = function(num) {
+  let result = '';
      const map = {
     M:  1000,
     CM: 900,
@@ -14,7 +15,6 @@ var intToRoman = function(num) {
     IV: 4,
     I:  1,
   };  
-  let result = '';
   
   for (key in map) {
     result += key.repeat(Math.floor(num / map[key]));
